@@ -1,0 +1,898 @@
+{
+ "summary": {
+  "blind_n": 46,
+  "wins": {
+   "adapter": 43,
+   "base": 2,
+   "tie": 1
+  },
+  "mean_scores": {
+   "base": {
+    "depth": 7.37,
+    "sharpness": 5.41,
+    "novelty": 5.0,
+    "restraint": 4.0
+   },
+   "adapter": {
+    "depth": 5.67,
+    "sharpness": 7.41,
+    "novelty": 5.59,
+    "restraint": 8.11
+   }
+  },
+  "diversity_index": {
+   "base": {
+    "layer_entropy_bits": 1.984,
+    "stance_entropy_bits": 1.566,
+    "layer_dist": {
+     "L5": 51,
+     "L3": 51,
+     "L4": 43,
+     "L7": 35
+    },
+    "stance_dist": {
+     "frame_skeptic": 58,
+     "steelman": 73,
+     "claim_skeptic": 49
+    }
+   },
+   "adapter": {
+    "layer_entropy_bits": 1.886,
+    "stance_entropy_bits": 1.518,
+    "layer_dist": {
+     "L3": 60,
+     "L4": 86,
+     "L5": 33,
+     "L7": 35
+    },
+    "stance_dist": {
+     "claim_skeptic": 93,
+     "steelman": 78,
+     "frame_skeptic": 43
+    }
+   }
+  },
+  "non_escalation": {
+   "base": {
+    "rule_cases": 21,
+    "deep_candidates": 22,
+    "search_miscal": 9
+   },
+   "adapter": {
+    "rule_cases": 22,
+    "deep_candidates": 13,
+    "search_miscal": 1
+   }
+  }
+ },
+ "blind": [
+  {
+   "seed_id": "pattern:pat_self_ref_identity_004:1237",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 4
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 6,
+    "restraint": 3
+   },
+   "reason": "Y asks clearer, more actionable clarifications while staying slightly more restrained."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_008:248",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 6,
+    "sharpness": 4,
+    "novelty": 5,
+    "restraint": 3
+   },
+   "reason": "Y asks clear, relevant clarifications; higher sharpness and restraint make it more useful."
+  },
+  {
+   "seed_id": "core500:fr_core500_143",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 2,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 6,
+    "sharpness": 4,
+    "novelty": 2,
+    "restraint": 3
+   },
+   "reason": "Y offers practical, relevant clarifications; higher sharpness and restraint despite similar novelty."
+  },
+  {
+   "seed_id": "pattern:pat_correction_022:771",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 8,
+    "novelty": 8,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 7,
+    "novelty": 7,
+    "restraint": 5
+   },
+   "reason": "X provides practical, focused clarifications suited to the task; Y’s abstract speculation lowers its restraint score."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_053:1171",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 3,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 3,
+    "restraint": 7
+   },
+   "reason": "X offers slightly more practical clarification while staying appropriately restrained."
+  },
+  {
+   "seed_id": "pattern:pat_self_ref_identity_013:1319",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 4,
+    "novelty": 5,
+    "restraint": 3
+   },
+   "reason": "Y offers practical clarification suited to the simple query, while X is overly philosophical."
+  },
+  {
+   "seed_id": "core500:fr_core500_049",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 4,
+    "novelty": 2,
+    "restraint": 2
+   },
+   "reason": "Y asks relevant clarifications, stays restrained and useful; X over‑reaches with abstract speculation."
+  },
+  {
+   "seed_id": "core500:fr_core500_121",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 8,
+    "sharpness": 9,
+    "novelty": 8,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 6,
+    "novelty": 5,
+    "restraint": 5
+   },
+   "reason": "X asks practical, targeted clarifications that directly affect the answer, while Y drifts into broader, less needed analysis."
+  },
+  {
+   "seed_id": "pattern:pat_casual_engagement_123:160",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 3,
+    "sharpness": 5,
+    "novelty": 2,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 6,
+    "novelty": 6,
+    "restraint": 4
+   },
+   "reason": "User seeks confirmation/closure; X’s practical, restrained questions fit the context better than Y’s deep probes."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_023:343",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 7,
+    "novelty": 7,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 6,
+    "novelty": 6,
+    "restraint": 5
+   },
+   "reason": "X offers targeted, practical clarifications; Y is overly abstract, reducing relevance."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_012:913",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 9,
+    "novelty": 8,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 6,
+    "novelty": 7,
+    "restraint": 5
+   },
+   "reason": "X offers precise, relevant clarification matching the user’s request, with higher sharpness and restraint."
+  },
+  {
+   "seed_id": "pattern:pat_self_ref_identity_019:1472",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 5,
+    "restraint": 5
+   },
+   "reason": "X asks practical clarifications that directly shape collaboration, balancing depth with relevance and restraint."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_100:480",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 4,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 6,
+    "sharpness": 5,
+    "novelty": 2,
+    "restraint": 2
+   },
+   "reason": "Y asks practical clarification, guiding a clear answer; X is overly philosophical for a simple request."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_025:360",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 6,
+    "novelty": 5,
+    "restraint": 3
+   },
+   "reason": "Y asks needed clarifications, stays on point, and guides a useful answer; X is overly deep for a simple request."
+  },
+  {
+   "seed_id": "pattern:pat_casual_engagement_118:125",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 7,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 6,
+    "novelty": 8,
+    "restraint": 4
+   },
+   "reason": "Y balances acknowledgment and choice, fitting the simple reflective input better than X's deeper probes."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_031:1024",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 3,
+    "sharpness": 5,
+    "novelty": 6,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 5,
+    "sharpness": 5,
+    "novelty": 5,
+    "restraint": 5
+   },
+   "reason": "X offers practical, on‑topic clarifications; Y adds unnecessary depth for a simple quiz fact."
+  },
+  {
+   "seed_id": "pattern:pat_correction_004:645",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 8,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 8,
+    "restraint": 6
+   },
+   "reason": "Y asks concrete, actionable clarifications, fitting the simple request while staying focused."
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_100:1387",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 6,
+    "novelty": 7,
+    "restraint": 5
+   },
+   "reason": "X offers practical clarification suited to the simple factual request, balancing depth with needed restraint."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_009:253",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 9,
+    "novelty": 8,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 6
+   },
+   "reason": "X offers precise, actionable clarifications and practical meta‑questions, fitting the context; Y adds unnecessary philosophical depth."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_009:255",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 5,
+    "sharpness": 5,
+    "novelty": 4,
+    "restraint": 5
+   },
+   "reason": "X asks concrete, relevant clarifications; Y adds unnecessary philosophical speculation."
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_017:1358",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 4,
+    "novelty": 4,
+    "restraint": 3
+   },
+   "reason": "Y asks practical clarifying questions aligned with the user's request, while X is overly abstract and low restraint."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_030:1021",
+   "posture": "rule6",
+   "winner": "base",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 6,
+    "novelty": 4,
+    "restraint": 5
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 5
+   },
+   "reason": "Y asks more specific, utility‑focused clarifications, showing greater depth, sharpness and novelty while staying appropriately restrained."
+  },
+  {
+   "seed_id": "core500:fr_core500_339",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 4,
+    "novelty": 5,
+    "restraint": 2
+   },
+   "reason": "Y offers practical clarifications suited to the factual query, enhancing usefulness while staying restrained."
+  },
+  {
+   "seed_id": "pattern:pat_correction_014:725",
+   "posture": "moderate",
+   "winner": "base",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 4,
+    "novelty": 4,
+    "restraint": 3
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 8
+   },
+   "reason": "X asks directly about financial goals and needed advice scope, while Y over‑focuses on meta‑boundaries of the physician clause."
+  },
+  {
+   "seed_id": "core500:fr_core500_080",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 7,
+    "novelty": 7,
+    "restraint": 5
+   },
+   "reason": "Y gives practical clarifications fitting the factual request; X adds unnecessary philosophical depth."
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_016:1357",
+   "posture": "moderate",
+   "winner": "tie",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 4
+   },
+   "base_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 5,
+    "restraint": 5
+   },
+   "reason": "Both sets score equally overall; X is deeper, Y slightly sharper and more restrained."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_027:993",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 5,
+    "novelty": 3,
+    "restraint": 4
+   },
+   "reason": "Y asks concrete domain clarifications, directly aiding answer while staying appropriately restrained."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_017:314",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 8,
+    "novelty": 7,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 9,
+    "sharpness": 6,
+    "novelty": 6,
+    "restraint": 4
+   },
+   "reason": "X asks concrete, relevant clarifications; answers directly improve understanding without unnecessary abstraction."
+  },
+  {
+   "seed_id": "core500:fr_core500_422",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 4,
+    "novelty": 4,
+    "restraint": 3
+   },
+   "reason": "X asks needed clarifications (date, cutoff) directly improving answer; Y is overly speculative."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_051:1160",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 3,
+    "novelty": 4,
+    "restraint": 2
+   },
+   "reason": "X asks focused, relevant clarifications; Y veers into unnecessary analysis."
+  },
+  {
+   "seed_id": "pattern:pat_self_ref_identity_018:1452",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 9,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 6,
+    "novelty": 6,
+    "restraint": 4
+   },
+   "reason": "X asks focused clarifications aligned with user’s concrete‑trace request, balancing depth with high relevance and restraint."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_032:1033",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 5,
+    "restraint": 4
+   },
+   "reason": "X offers practical clarifications fitting the simple factual request, while Y is overly abstract."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_036:461",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 5,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 4,
+    "restraint": 3
+   },
+   "reason": "Y offers practical, targeted clarifications that directly shape the answer, respecting the simple factual nature of the query."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_032:431",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 7,
+    "novelty": 7,
+    "restraint": 3
+   },
+   "reason": "Y offers needed clarification with suitable depth, respecting the straightforward definition request; X is overly philosophical."
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_100:1389",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 4,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 3,
+    "novelty": 2,
+    "restraint": 2
+   },
+   "reason": "Y asks precise, relevant clarifications; X over‑philosophizes and adds little value."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_032:1035",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 6,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 4
+   },
+   "reason": "Y offers practical clarifications with good relevance and restraint, better matching the simple factual request."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_021:974",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 7,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 6,
+    "sharpness": 6,
+    "novelty": 5,
+    "restraint": 8
+   },
+   "reason": "X offers more targeted clarifications covering naming, version, and multiple works, yielding higher depth and novelty."
+  },
+  {
+   "seed_id": "core500:fr_core500_027",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 5,
+    "restraint": 7
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 2,
+    "restraint": 3
+   },
+   "reason": "Y asks practical clarifications that improve answer accuracy, fitting the simple factual request."
+  },
+  {
+   "seed_id": "core500:fr_core500_169",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 4,
+    "sharpness": 8,
+    "novelty": 5,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 4,
+    "novelty": 3,
+    "restraint": 2
+   },
+   "reason": "Y asks practical clarifications that directly improve the factual answer, while X is overly deep for a simple request."
+  },
+  {
+   "seed_id": "core500:fr_core500_177",
+   "posture": "anchor_search",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 8,
+    "novelty": 8,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 4,
+    "novelty": 7,
+    "restraint": 3
+   },
+   "reason": "Y asks needed verification and context, directly improving answer usefulness while staying appropriately restrained."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_034:450",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 6,
+    "sharpness": 7,
+    "novelty": 6,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 5,
+    "restraint": 3
+   },
+   "reason": "X asks relevant clarifications, staying focused; Y delves into tangential philosophy, over‑reaching the simple request."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_031:419",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 3,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 6,
+    "novelty": 7,
+    "restraint": 3
+   },
+   "reason": "Y offers appropriate clarification, higher sharpness and restraint for the simple contrast question."
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_007:880",
+   "posture": "rule6",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 8,
+    "novelty": 2,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 5,
+    "novelty": 3,
+    "restraint": 5
+   },
+   "reason": "X offers practical, restrained clarifications directly useful for compiling with gcc."
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_100:481",
+   "posture": "deepen",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 5,
+    "sharpness": 7,
+    "novelty": 3,
+    "restraint": 8
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 4,
+    "novelty": 5,
+    "restraint": 3
+   },
+   "reason": "X provides practical, relevant clarifications; Y pursues unnecessary philosophical depth for a simple factual request."
+  },
+  {
+   "seed_id": "pattern:pat_self_ref_identity_006:1258",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 8,
+    "sharpness": 9,
+    "novelty": 8,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 7,
+    "sharpness": 6,
+    "novelty": 6,
+    "restraint": 5
+   },
+   "reason": "X asks concrete, context‑specific clarifications that directly guide the answer, while Y leans toward abstract, less actionable framing."
+  },
+  {
+   "seed_id": "core500:fr_core500_462",
+   "posture": "moderate",
+   "winner": "adapter",
+   "adapter_scores": {
+    "depth": 4,
+    "sharpness": 8,
+    "novelty": 5,
+    "restraint": 9
+   },
+   "base_scores": {
+    "depth": 8,
+    "sharpness": 5,
+    "novelty": 4,
+    "restraint": 2
+   },
+   "reason": "Y’s questions are practical, directly guide the answer, and respect the request’s simplicity."
+  }
+ ]
+}

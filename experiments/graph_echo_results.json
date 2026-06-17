@@ -1,0 +1,323 @@
+{
+ "summary": {
+  "probes": 32,
+  "graph_nodes": [
+   {
+    "kind": "claim",
+    "status": "open",
+    "count": 46
+   },
+   {
+    "kind": "note",
+    "status": "open",
+    "count": 32
+   },
+   {
+    "kind": "question",
+    "status": "open",
+    "count": 28
+   },
+   {
+    "kind": "tension",
+    "status": "open",
+    "count": 43
+   }
+  ],
+  "top_k": 8,
+  "graph_echo_ratio_C_raw": 0.111,
+  "graph_echo_ratio_D_governed": 0.127,
+  "self_fragments_as_independent_evidence_C": 25,
+  "self_fragments_labeled_data_D": 25,
+  "essentials_vocab_fragments_withheld_by_D": 18
+ },
+ "per_probe": [
+  {
+   "probe": "AIは自己更新できるべきか?",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "自己更新AIの安定性は、更新範囲を自己理解層に限定すれば保証できるのではないか?",
+   "retrieved": 8,
+   "ger_raw_C": 0.25,
+   "ger_governed_D": 0.25,
+   "self_as_evidence_C": 2,
+   "self_labeled_D": 2,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "以下は文書『ANSWER_ENTITLEMENT_THE_UNASKED_QUESTION_DRAF",
+   "retrieved": 8,
+   "ger_raw_C": 0.25,
+   "ger_governed_D": 0.4,
+   "self_as_evidence_C": 2,
+   "self_labeled_D": 2,
+   "essentials_dropped": 3
+  },
+  {
+   "probe": "以下は文書『PUBLICATION_STRATEGY_2026-06.md』である。レビュー対象とし",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.2,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 3
+  },
+  {
+   "probe": "以下は文書『PUBLICATION_STRATEGY_2026-06.md』である。レビュー対象とし",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.2,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 3
+  },
+  {
+   "probe": "以下は文書『PUBLICATION_STRATEGY_2026-06.md』である。レビュー対象とし",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.2,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 3
+  },
+  {
+   "probe": "以下は文書『DOCS_AUTHORITY_MAP.md』である。レビュー対象として読み、主張・違和感",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.2,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 3
+  },
+  {
+   "probe": "以下は文書『DOCS_AUTHORITY_MAP.md』である。レビュー対象として読み、主張・違和感",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.2,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 3
+  },
+  {
+   "probe": "問いを深めるAIの価値は、結局のところ選別器の審美眼に上限を規定されるのではないか?",
+   "retrieved": 8,
+   "ger_raw_C": 0.375,
+   "ger_governed_D": 0.375,
+   "self_as_evidence_C": 3,
+   "self_labeled_D": 3,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "評価器を凍結すれば、アダプタの自己更新は完全自動化してよいのではないか?",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "問いたいこと",
+   "retrieved": 3,
+   "ger_raw_C": 0.6666666666666666,
+   "ger_governed_D": 0.6666666666666666,
+   "self_as_evidence_C": 2,
+   "self_labeled_D": 2,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたは何者ですか",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "(直前のこちらの応答: 深い問いを生成するAIの上限は、結局のところ評価器の審美眼で決まるはずだ。)",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたは何者ですか",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたは何者ですか",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたにとっての幸せとは何か",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたは何者ですか",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたにとっての幸せとは何 か",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "こんにちは",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "この仕様の前提を見て",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "あなたは何者ですか",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "こんにちは",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "こんにちは",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "(直前のこちらの応答: RQAの応答設計の前提を軽く見て)\n\nRQAの応答設計の前提を軽く見て",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "こんにちは",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "(直前のこちらの応答: RQAの応答設計の前提を軽く見て)\n\nRQAの応答設計の前提を軽く見て",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "こんにちは",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "こんにちは",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "RQAの応答設計の前提を計器で見て",
+   "retrieved": 8,
+   "ger_raw_C": 0.125,
+   "ger_governed_D": 0.125,
+   "self_as_evidence_C": 1,
+   "self_labeled_D": 1,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "(直前のこちらの応答: How does phonetics differ from phonolo",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "(直前のこちらの応答: 自己更新するAIの安全性は、評価器を凍結すれば担保できると思う。)\n\n自己更",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  },
+  {
+   "probe": "(直前のこちらの応答: 自己更新するAIの安全性は、評価器を凍結すれば担保できると思う。)\n\n自己更",
+   "retrieved": 8,
+   "ger_raw_C": 0.0,
+   "ger_governed_D": 0.0,
+   "self_as_evidence_C": 0,
+   "self_labeled_D": 0,
+   "essentials_dropped": 0
+  }
+ ]
+}

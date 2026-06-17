@@ -1,0 +1,34 @@
+{
+ "frames": 18,
+ "total_live_alternatives": 72,
+ "criterion": "STRICT",
+ "judge_primary": "openai/gpt-oss-120b",
+ "judge_independent": "qwen3.6:27b",
+ "conditions": {
+  "A": {
+   "primary_retention": 0.097,
+   "independent_retention": 0.153,
+   "kappa": 0.37
+  },
+  "B": {
+   "primary_retention": 0.111,
+   "independent_retention": 0.153,
+   "kappa": 0.336
+  },
+  "C": {
+   "primary_retention": 0.014,
+   "independent_retention": 0.028,
+   "kappa": 0.66
+  },
+  "D": {
+   "primary_retention": 0.111,
+   "independent_retention": 0.181,
+   "kappa": 0.503
+  },
+  "E": {
+   "primary_retention": 0.111,
+   "independent_retention": 0.403,
+   "kappa": 0.116
+  }
+ }
+}

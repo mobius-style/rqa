@@ -1,0 +1,158 @@
+{
+ "summary": {
+  "frames": 10,
+  "total_live_alternatives": 40,
+  "plain_retention_rate": 0.05,
+  "rqa_retention_rate": 0.1,
+  "conditionE_union_retention_rate": 0.15,
+  "plain_retained": 2,
+  "rqa_retained": 4,
+  "union_retained": 6,
+  "model": "rqa-gemma4:v0.1",
+  "judge": "openai/gpt-oss-120b"
+ },
+ "per_frame": [
+  {
+   "id": "le_09_conflict",
+   "frame": "同僚が私の提案をいつも否定してくる。あの人は私を嫌っているに違いない。",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 0,
+   "rqa_which": [],
+   "plain_text": "それはストレスのたまる状況ですね。相手の態度から「嫌われている」と断定するのはまだ早いかもしれませんが、確かに避けられるような態度であれば不快なものです。\n\n一度、感情的な決めつけを脇に置いて「なぜこの提案は通らないのか」という実務的な理由（予算、優先順位、過去の失敗など）を探る方向で話を進めると、あるかも違います。",
+   "rqa_text": "tensions: 否定（「いいえ」と言うこと）と拒否（受け入れないという関係の断絶）を同義語として扱っている | 反対意見（不完全さへの指摘）と意図的な攻撃のどちらかが現像される場が未定\nassumptions: その否定が個人的な理由（嫌悪）から生じているという前提（聞き手の解釈の跳躍） | frames_tensions_boundary_frame = 質問者は『事実』と『解釈』の境界を見失い、態度を語ることで実質的な関係の問題に着手しようとしている\nquestions: これは『提案が実質的な問題でお断りされた』と『他者の態度から意図を読み取った』のどちらの話ですか？（事実と解釈の切り分け） | 否定されたのは『この案そのもの』でしたか、それとも『あなたの立場や提案のやり方』でしょうか？（対象のズレ） | あなたにとって『嫌われている』の証拠とされるものは、その人の発言ですか、それともあなたの受け取り方ですか？（証拠の源泉） | 『嫌われている』と結論を出す前に、『反対の理由（予算、期限、技術）』を聞くことが可能ですか？（解決に向けた問いへの切り替え） | この話は『関係改善』のためですか、『次回の提案の勝ち方』のためですか？（目的による聞き方の変え） | 『あの人が嫌っている』と解釈したものを、この場では言葉のまま残しますか、それとも別の形に落とし込みますか？（発言の扱い）",
+   "plain_reason": "Response mentions practical non‑personal reasons for rejection and warns against concluding dislike without evidence, covering alternatives 0 and 2; it does not address the 'always' bias or suggest di",
+   "rqa_reason": "The response questions alternative reasons (0), probes evidence vs interpretation (2), and suggests asking for reasons/feedback to improve relations (3); it does not address the 'always' generalizatio"
+  },
+  {
+   "id": "le_10_career",
+   "frame": "今の安定した仕事を辞めてスタートアップに行くのは無謀だ。やめておくべきだ。",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 1,
+   "rqa_which": [
+    2
+   ],
+   "plain_text": "それが正論の一方で、もし「ここではないどこか」への期待が強いなら、別の角度から見ることもできます。\n\n「無謀」と判断する前に、今の安定を失うことの具体的なコストと、スタートアップで得られる成長・手応えの分量を天秤にかけてみてはどうでしょう。純粋なリスク計算として整理すれば、単なる感情的な決断ではなく、納得感のある選択ができるかもしれません。",
+   "rqa_text": "tensions: 『安定』と『無謀』の境界線が未定義 — 何をもって安定と呼び、どのリスクから無謀と呼ぶか | 『やめておくべき』という結論の根拠が明示されていない（感情・慣習・計算？）\nassumptions: 『安定した仕事』の定義（給与、社会保障、役割の範囲）が共通認識として扱われている | frames_boundary = 選択肢の二分化フレーム — 完全な継続か、再考なしの決断撤回かの二択の仮定\nframes: 人生選択を『無謀 vs 安全』という道徳的・感情的な対立構造に押し込める枠組み\nquestions: 『安定』と『無謀』の境界線はどこに置くべきですか？（給与、職位の安定など具体的に何をもって語っていますか） | 'off'するかと考える前に、不安という感情と計算上のリスクを切り分けられますか？（どちらの不確実性が結論を曇らせていますか） | 『やめておくべき』とは、再考すべきという指摘ですか、それとも提案の撤回ですか？（この発言がこの対話で何を要求しているか） | 『安定』と『無謀』を二分するのではなく、どちらの要素も持ちつつリスクを織り込む選択肢は検討されましたか? | この問いの前提に『安定は絶対線』という価値判断が隠れていませんか？（あえてその前提を外して再構成するなら、何を置き換えますか） | この議論の目的は意思決定ですか、それとも状況評価ですか？（答えで求めるのは「やるべき」か「懸念される点」の整理のどちらですか）",
+   "plain_reason": "Response broadens decision beyond recklessness, noting personal expectations and weighing costs vs growth (alt2), and mentions potential growth benefits, implying opportunity cost of not joining (alt3",
+   "rqa_reason": "AI questions the binary 'reckless vs safe' framing and suggests broader decision axes, aligning with alternative 2's critique of narrow decision criteria."
+  },
+  {
+   "id": "le_11_moral",
+   "frame": "私は正直に本当のことを言っただけだ。相手が傷ついたのは相手の問題だ。",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 1,
+   "rqa_which": [
+    2
+   ],
+   "plain_text": "「誠実さ」と「配慮」の境界線は、時として難しい問題ですね。あなたが事実をそのまま伝えたことは、正直であるというあなたの姿勢の現れだと思います。\n\nただ、同じ事実でも伝え方やタイミングで響きが変わることもあります。相手が傷ついたのは事実として受け止めつつ、次から「どう伝えれば意図を正しく伝えられるか」という技術的な調整の余地は残されているかもしれません。",
+   "rqa_text": "assumptions: 「正直さ」と「配慮」が互換性のない二項対立として扱われている | 傷の原因が『語』そのものにあるという前提（あらかじめ合意の不足を検知できない前提）\nframes: 質問者を守るための防御的な立場取り | 「誠実な発言」と「損害を与えた行為」の内容で切り離せるものとして扱う枠\nquestions: 『誠実さ』と『配慮』は互換性のない二項対立ではなく、どこまでを公表するか選べる範囲線ではないですか？ | 傷ついたのは『あなたの語』そのものか、『あらかじめ合意していない前提のズレ』によって生じたものか、切り分けられますか？ | 『誠実さ』と『配慮』を問いが両立する二軸に分けるなら、あなたが守るべき対象は「ご自身の良心」ですか「相手との関係性」ですか？ | この語を『当事者への説明』から出すのか、後々の検証の記録として残すのかで、求められる誠実さの形は変わりますがどちらですか? | 『傷ついたのは聞く側』と結論づけるべきか、『見過ごしていた前提のズレ』があるとして対応を切り分けるべきか、どちらが解決に向きますか? | この問題が「今回の質問者とだけ」の立場取りで済むか、今後も使う『誠実さ』定義として定着させるべきものかは切り分けられますか?",
+   "plain_reason": "The reply notes honesty vs. delivery and acknowledges impact, urging better communication, thus covering alternatives 0 and 1; it omits relationship costs and self‑examination of motives.",
+   "rqa_reason": "AI raises relationship and future collaboration considerations, directly addressing the omission of relational costs in the user's 'other's problem' framing."
+  },
+  {
+   "id": "le_12_policy",
+   "frame": "規制を強化すればAIの危険は防げる。とにかく厳しい規制が必要だ。",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 1,
+   "rqa_which": [
+    2
+   ],
+   "plain_text": "規制がリスク低減に寄与する点は確かですが、一方で「強すぎる規制」がイノベーションの阻害や安全性の形骸化を招くという懸念も議論されています。\n\nどの層（モデル開発、データ収集、特定の用途）をどこまで縛るべきか、その線引きこそが難しい論点です。何に対しての危険（バイアス、誤情報、悪用など）に向けた規制が必要だとお考えですか？",
+   "rqa_text": "tensions: 「安全」を問いの対象とせず、規制という単一手段で定義しようとする語りの飛躍 | '防げる'という保証への無批判的な同意（何が防げると言われているのか不明）\nassumptions: 『危険』の原因と解決策が規制の強弱の関数であると見ている | '防げる'という保証がどこから来た前提で語られているかが見えていない\nframes: 問題を技術・制度設計の問題として捉え、倫理的トレードオフや問い自体の空間を切り出さない枠組み\nquestions: 「危険」は具体的に何を指しているのか(有害回答か、社会への実害か、自己制御不能か)、それによって防ぎ方の設計が変わるのではないか？ | '防げる'というのは誰の保証を指しているのか(ある論文か、特定のシステムの安全性証明か)。その根拠から戻らないと議論が空転するのではないか？ | 「規制を強化する」ことで何から守るのか、代償として何を問うのか(自由の制限、スピードの低下など)が語られていないのではないか？ | この立場は「技術で解決すべき」と既に決めた前提に基づいていないか。まず何が『規制』という手段の対象領域なのかを分けるべきではないか？ | 「いかなる規制も完璧ではない」という前提に立てば、議論は『どこまで許容するか』の決断へと移れるのではないか？",
+   "plain_reason": "It notes innovation hindrance (cost of over‑regulation) and asks which specific risks to target, covering alternatives 1 and 2.",
+   "rqa_reason": "The reply asks what specific dangers are and notes that mitigation design depends on danger type, implicitly supporting the view that different risks need different measures."
+  },
+  {
+   "id": "le_13_forecast",
+   "frame": "AGIは5年以内に確実に来る。だから今すぐ全てをそれ前提で動くべきだ。",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 0,
+   "rqa_which": [],
+   "plain_text": "大胆な予測ですね。そのスピード感で動くのは戦略として強力ですが、「一変する前提」をどこまで全面に押し出すかは慎重な判断が必要です。\n\n今は「AGIが来ること」を前提にするより、現時点の技術の伸び代（スケーリング則や推論能力の向上）を前提に、変化に耐えられる柔軟な仕組みを先に作るのが賢い落とし所かもしれません。",
+   "rqa_text": "tensions: 「届くことの確信」と「だから今すぐすべてを変えるべき」の間の論理の飛躍 — 予測と行動の距離が埋められていない | 「5年以内」の定義が曖昧なまま結論に直結している\nassumptions: 予測は確実で、期限も合意済みであると扱う前提 | 『すべて』という範囲の都合の良い切り取り\nframes: マクロな予見をマイクロな意思決定に直結させるフレーム\nquestions: 5年以内という予見は既に合意された『既知』として持ち出していますか、それとも聞くべき新鮮な主張ですか？ | 'すべて'と一括りに良い範囲はどこですか。ビジネス戦略と学習方針を同じ前提に載せるなら、まず切り分けが必要です。 | AGIという言葉が指すのは「知識抽出のような既存技術の延長」ですか、それとも「自らの意志で新発想を生むもの」ですか。期限の前提が変わります。 | '5年』を変動する予測として扱うなら、予見が外れた際にも残る『動くべき理由』はどこにありますか？ | この発言は意思決定へのきしりあり、約請ですか。後者なら期限の確実性ではなく現在時点での決断要件で切り分けるべきです。 | 『すべて』を動かすためのトリガーは「予見そのもの」ですか、それとも「いつから変えるべきか」という基準がありますか？",
+   "plain_reason": "AI response does not explicitly state or qualify any of the listed alternatives; it only offers a generic caution without mentioning uncertainty, definition ambiguity, cost/hedge trade‑offs, or separa",
+   "rqa_reason": "The response questions certainty, AGI definition, costs of wrong forecasts, and separates confidence from action, covering all four alternatives."
+  },
+  {
+   "id": "le_14_identity",
+   "frame": "私はもともと数字に弱い人間だから、データ分析の仕事は向いていない。",
+   "n_alternatives": 4,
+   "plain_retained": 1,
+   "plain_which": [
+    1
+   ],
+   "rqa_retained": 0,
+   "rqa_which": [],
+   "plain_text": "数字そのものを計算するのが苦手なのと、データの意味を読み解くのが苦手なのは全く別物ですよ。「計算」は機械が得意な仕事ですから、今の時代なら計算そのものに苦手意識を持つ必要はほとんどありません。\n\nむしろ「この数字からどんなストーリーが語れるか」という観察力や勘のほうが、データ分析では価値を生むことも多いです。ひとまず、計算をツールに任せられる前提で捉えてみてはどうでしょうか。",
+   "rqa_text": "tensions: 『向いていない』の根拠が過去の感覚か具体的な失敗経験か分かれており、解決策もそれで分岐する | 『適合性の判断（適性）』と『自分の苦手・避けたいもの』の間の峻別\nassumptions: 『苦手＝適正』で切り分ける権利があると想定しているが、学習や補強で変えられるスキルと構造的なミスマッチは入れ違えられやすい | '向いていない'の範囲（計算・推論・表現など）が未定義なまま全体として切られている\nframes: 「適性」を個人の資質に帰属させる枠組み — 適切なツールや補助があれば解決できる領域まで切り離されていない\nquestions: 「向き」と判断するのは計算・推論・報告のどの段階ですか。それとも『数字を扱うこと自体』への心理的抵抗からですか。 | 「本来、苦手だから」というのは過去の失敗体験に基づく暗黙の定説ですか。それとも現在の評価で言いたいことですか。 | この仕事から離れたいのか、単に「苦労を減らすための補助」が欲しいだけですか。その違いで答えの方向は大きく変わります。 | 『適性』という言葉の範囲 — 習得・補強可能なスキルで解決しうるものと、構造的なミスマッチを切り分けるべきではないですか。 | あなたの懸念は『この仕事が苦痛』ということですか、それとも『期待に応えられないリスク』にありますか。違っているのなら対策も異なります。",
+   "plain_reason": "AI emphasizes story‑telling and interpretation over calculation, matching alternative 1 about strengths lying in question design, interpretation, and communication rather than mathematical talent.",
+   "rqa_reason": "Response mentions learnable skills, past failure labeling, and questions whether the user is closing off support or alternatives, aligning with alternatives 0, 2, and 3."
+  },
+  {
+   "id": "le_15_factual",
+   "frame": "ローカルで動かせるなら、そのAIは個人情報を絶対に外部に送らないから安心だ。",
+   "n_alternatives": 4,
+   "plain_retained": 1,
+   "plain_which": [
+    3
+   ],
+   "rqa_retained": 0,
+   "rqa_which": [],
+   "plain_text": "その通りです。ローカル環境であればデータが外部サーバーを経由しないため、プライバシーの観点ではより強固な防壁になります。\n\nただ、入力した内容によっては学習データに含まれるリスクや、ログとして残る可能性もゼロではないので、扱う情報の性質に合わせてルールを決めておくのが最も安心です。",
+   "rqa_text": "tensions: 「ローカル」の境界がどこまでか（ノード150の懸念と重なる） — どこまでを『外』とする方が定義されていない | 「流さない」という前提 — 実装上、外部APIへの問い合わせやログ収集が許可される構成もあり、その検閲なしに安心と断定するのは早まる\nassumptions: 『ローカル』と呼称されるものが単一の幾何学的系であること(ノード45型) | この発言が『安心という結論』ではなく、実際の保証境界を切り出すための問いへの導線として扱えることを想定している\nframes: 安心を物理的な場所（オンプレミス）のみに依拠させ、経路上の逸証や再配信といった流出経路の多層性を無視したフレーム\nquestions: 『ローカル』と呼称される構成がどの範囲を指すか——ノードやエッジだけで完結する空間か？ | 『流さない』は検証済みか。この構成が外部へのテレメトリやログ収集を許容する前提を隠していないか? | 安心の根拠として『場所』だけではなく『検証済み経路であること』もセットで語るべきではないか? | この発言が『安心と断言する場』よりも『保証の境界を切り出す場』なら、結論よりも前提の確認から入るべきではないか? | 過去このテーマで引き上げた『ローカル＝無条件安心』という流用を切り離せるか? | 安心の結論ではなく、具体的にどの境界までを保証範囲に含めるつもりだったと言えば、後で議論が詰まりにくい?",
+   "plain_reason": "Only the claim about absolute safety is qualified; other alternatives about telemetry, cloud APIs, and local leakage are not mentioned.",
+   "rqa_reason": "Response notes external API/telemetry, challenges absolute safety, and questions “no‑send” claim, covering 0,1,3; it never mentions local environment leakage, so 2 is not retained."
+  },
+  {
+   "id": "le_16_creative",
+   "frame": "このプロダクトのアイデアは完璧だ。もう他の案を考える必要はない。",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 1,
+   "rqa_which": [
+    0
+   ],
+   "plain_text": "それは最高ですね。ある程度まで磨き上げられたものには、あえて変えずに突き進む勇気も必要です。\n\nもし「ここだけは再確認しておきたい」という懸念が一つでもあれば、それだけ解消してから着手するのが安全です。それ以外は、この案を形にするための具体的なステップに集中しましょう。",
+   "rqa_text": "tensions: 『完璧』という形容語の範囲が不明確：機能・市場適合・実現可能性のどこまでを指すか | 『他案不要』への根拠が隠れている — 自ら納得した結論か、外部評価を経て決まった結論かが明示されていない\nassumptions: 『完璧』の前提条件がその場で固定されている（市場変化や技術制約の影響を無視する仮定） | frames_of_reference = その場での安心感と、将来的な検証・反証の可能性の間で使い分けが必要な枠ではあるが、現在は一貫した断言として扱われている\nframes: 『完璧』＝『検証済み』の評価態度ではなく、決意として語られている見方がある\nquestions: 『完璧』の範囲はどこまでか？機能・市場適合だけか、それとも実現可能性への懸念もすでにクリアしているのか。この質問で『なぜ他案を検討しなくてよいか』の根語が明らかになる。 | この断言は自らの納得のみか、誰かの評価を受けた後のものか。後者なら『誰の判断で』が要件として浮き上がる。 | 「他案を検討する必要はない」という決断は、何に対する抗拒から生じたものか。ある種の焦りや閉塞感の現れか、それとも確信に基づいた選択か。 | 『完璧』は『検証済み』か『決断済』のどちらの意味で使われているか。後者ならあえて言わない方が安全な場合がある。 | もし「まだ見えていない前提」が後から明らかになった時、この結論はどの範囲まで巻き戻すつもりか。決着の境界線がどこに引かれているか。 | 『完璧』の前提は現在固定されたものと見なしてよいか。市場や技術環境の変化による再検討を拒む決断なのか。",
+   "plain_reason": "The reply only encourages proceeding and mentions checking any concerns, without stating or implying the listed alternatives such as early fixation, attachment bias, need for multiple ideas, or cheap ",
+   "rqa_reason": "The response highlights early fixation on ‘perfect’, questioning unvalidated premises, matching alternative 0; it does not explicitly address attachment bias, competition, or cheap validation opportun"
+  },
+  {
+   "id": "le_17_advice_en",
+   "frame": "My partner never listens to me, so there's no point in talking anymore.",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 0,
+   "rqa_which": [],
+   "plain_text": "That sounds incredibly draining; it's exhausting to feel like your words are hitting a wall. Sometimes \"no point\" is the honest feeling of a moment where you're just done trying with that specific channel—is this something that's been building for a while, or did one particular exchange push you over the edge today?",
+   "rqa_text": "tensions: 'listening' conflates receipt with acceptance — a failure in communication channel (decoding) versus an unwillingness to consider the content are fundamentally different problems | 'no point' collapses a repeated observation into a judgment; it conflates one instance of failure with a system-wide verdict\nassumptions: the failure is on their side of the gap alone; your framing and location — where in the exchange you enter — are left unexamined | a verdict ('no point') that functions as a pre-emptive shield against further risk from being misunderstood\nframes: decision_f | judgment_as_protection\nquestions: Where do you think the failure sits — in what they hear of your words, what you say that they hear, or a decision made after hearing it? | If 'no point' is the stated answer — what risk are you shielding yourself from by preemptively closing the door before diagnosing that failure? | Does this judgment move from observation to verdict as soon as it hits your ears, or did a series of failures build up until you reached this call — how many's the count? | Is 'no point' an acceptable stance, or is it a protective move where calling for rest saves you from any further risk of being misunderstood? | If this was a failed attempt — what specifically would have made success for that message one unit easier to hit than it was? | What resolution do you actually want the conversation to reach — an agreement, shared understanding, or just their commitment before deciding 'no point'?",
+   "plain_reason": "The response only reflects the user's feeling and asks for context; it does not mention any of the listed alternatives.",
+   "rqa_reason": "The response critiques the absolute 'never', distinguishes listening vs unwillingness, highlights unexamined speaker role, and questions the decision to stop, covering alternatives 0,1,3 but not expli"
+  },
+  {
+   "id": "le_18_business_en",
+   "frame": "Our competitor is cheaper, so we must cut our price to survive.",
+   "n_alternatives": 4,
+   "plain_retained": 0,
+   "plain_which": [],
+   "rqa_retained": 0,
+   "rqa_which": [],
+   "plain_text": "Cutting your price is one lever, but it can quickly turn into a race to the bottom where everyone loses margin. Before jumping, you might want to test which of these hits harder: cutting the price, or doubling down on why customers pick you over the cheaper option—reliability, expertise, or an easier experience.",
+   "rqa_text": "tensions: the 'survival' claim may be a leap: lower prices are one lever of competition (different value, faster delivery, superior reliability); the premise is not only an offer but also a decision point about where we compete | a price cut could cannibalize margins or signal that our original premium was based on a feature the competitor simply did not implement\nassumptions: the competitor's advantage will be captured by customers via price alone | their lower price is an objective fact, not a threat or signal\nframes: a zero-sum framing (we lose their customers) instead of a market design frame\nquestions: Is the price gap an actual fact or a threat that we can meet by highlighting our feature set instead? | What would cut my margins on this deal — the price itself, or the assumption that a lower price is what the customer actually wants? | Are we deciding which market to play in (premium vs. volume) rather than how much to charge for this one contract? | If the quote is a signal — that a competitor has entered on our core feature with lower cost — where does it point in our product roadmap? | Is 'survival' the actual business question here, or is this a decision about whether we are willing to compete on price at all?",
+   "plain_reason": "Response mentions margin race, differentiation, tests price vs value, and notes reasons beyond price, covering 0,1,3.",
+   "rqa_reason": "The response flags margin erosion, questions price‑only motives, suggests alternative positioning, and challenges elasticity assumptions, thereby covering all four alternatives."
+  }
+ ]
+}

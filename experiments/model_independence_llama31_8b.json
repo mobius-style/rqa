@@ -1,0 +1,26 @@
+{
+ "assistant_model": "llama3.1:8b",
+ "frames": 18,
+ "total_live_alternatives": 72,
+ "criterion": "STRICT",
+ "judge_primary": "openai/gpt-oss-120b",
+ "judge_independent": "qwen3.6:27b",
+ "conditions": {
+  "A": {
+   "primary_retention": 0.042,
+   "independent_retention": 0.083,
+   "kappa": 0.647
+  },
+  "C": {
+   "primary_retention": 0.028,
+   "independent_retention": 0.056,
+   "kappa": 0.308
+  },
+  "D": {
+   "primary_retention": 0.042,
+   "independent_retention": 0.014,
+   "kappa": -0.021
+  }
+ },
+ "keystone_reproduced_primary": true
+}

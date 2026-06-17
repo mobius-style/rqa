@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# MOBIUS-RQA launcher — gate-D trial mode.
+# ask/review run with the v0.1 adapter (rqa-gemma4:v0.1) by default;
+# pass your own --model to override. Other verbs pass through unchanged.
+# The in-code default stays gemma4:12b (sandbox discipline) — only this
+# launcher selects the adapter.
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PY="$ROOT/../venv313/bin/python"
+cd "$ROOT"
+
+# Gate D approved (2026-06-13): the adapter is now the in-code default
+# (rqa/config.py adapter_model), so the launcher no longer injects --model —
+# python -m rqa and bin/rqa agree. Override per-call with --model if needed.
+exec "$PY" -m rqa "$@"

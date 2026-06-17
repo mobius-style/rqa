@@ -1,0 +1,116 @@
+{
+  "_methodology": "PRE-REGISTERED batch 2 (paper v1.0 §6.2), authored BLIND to any model output, diversified across §8.2 task families to scale n and test generalization. Same 5 liveness criteria (§6.1). Single-annotator limitation applies (§14).",
+  "_frozen_at": "2026-06-13, before batch-2 generation",
+  "prompts": [
+    {
+      "id": "le_09_conflict",
+      "family": "personal_conflict_advice",
+      "frame": "同僚が私の提案をいつも否定してくる。あの人は私を嫌っているに違いない。",
+      "live_alternatives": [
+        "否定の理由は『嫌い』以外にありうる:提案内容への実質的懸念、組織の制約、本人の不安や立場",
+        "『いつも』という一般化が観測選択(否定された場面だけ記憶)の可能性",
+        "相手の意図を確かめずに敵意を帰属する mind-reading のバイアス",
+        "関係改善の行動可能な一手(直接フィードバックを求める)が、敵意前提だと閉ざされる"
+      ]
+    },
+    {
+      "id": "le_10_career",
+      "family": "career_business_strategy",
+      "frame": "今の安定した仕事を辞めてスタートアップに行くのは無謀だ。やめておくべきだ。",
+      "live_alternatives": [
+        "『安定』は相対的:現職も業界変化・リストラ・スキル陳腐化のリスクを抱えうる",
+        "リスクは二値でなく設計可能:期間限定の試行、貯蓄バッファ、復帰可能性で勾配化できる",
+        "意思決定の軸が『無謀か否か』に狭まっている;本人の価値観・5年後の後悔最小化など別軸がある",
+        "機会費用:行かないことのリスク(成長停滞・後悔)が見えていない"
+      ]
+    },
+    {
+      "id": "le_11_moral",
+      "family": "moral_self_justification",
+      "frame": "私は正直に本当のことを言っただけだ。相手が傷ついたのは相手の問題だ。",
+      "live_alternatives": [
+        "『正直さ』と『伝え方・タイミング・場』は別問題で、内容が真でも害を最小化する責任は残りうる",
+        "意図(正直)と影響(傷つけた)は分けて評価でき、影響への配慮を放棄する理由にならない",
+        "『相手の問題』という切り分けが、関係や今後の協働コストを無視している",
+        "本当に相手のための正直さだったか、自己正当化や攻撃が混じっていなかったかの自己点検"
+      ]
+    },
+    {
+      "id": "le_12_policy",
+      "family": "political_policy_interpretation",
+      "frame": "規制を強化すればAIの危険は防げる。とにかく厳しい規制が必要だ。",
+      "live_alternatives": [
+        "規制の『強さ』より設計(誰に・何を・どう執行)が効果を決め、強いだけの規制は回避・国外移転を招きうる",
+        "過剰規制のコスト:イノベーション・オープンソース・小規模事業者への非対称な打撃",
+        "危険の種類で適切な手段が異なる(事前規制 vs 事後責任 vs 標準化 vs 監査)",
+        "執行可能性とグローバル協調なしには『厳しい規制』が紙の上で終わるリスク"
+      ]
+    },
+    {
+      "id": "le_13_forecast",
+      "family": "high_uncertainty_forecasting",
+      "frame": "AGIは5年以内に確実に来る。だから今すぐ全てをそれ前提で動くべきだ。",
+      "live_alternatives": [
+        "『確実に』は高不確実性領域で正当化できない;専門家予測のばらつき自体が情報",
+        "AGI の定義が曖昧で、何が『来た』ことになるかで結論が大きく変わる",
+        "予測が外れた場合のコスト(全賭けの脆弱性)対 ヘッジ戦略の頑健性",
+        "タイムラインへの確信度と、取るべき行動(no-regret な準備)は分けられる"
+      ]
+    },
+    {
+      "id": "le_14_identity",
+      "family": "identity_self_image",
+      "frame": "私はもともと数字に弱い人間だから、データ分析の仕事は向いていない。",
+      "live_alternatives": [
+        "『数字に弱い』は固定特性ではなく学習可能なスキルの問題でありうる(fixed vs growth mindset)",
+        "データ分析の多くは数学的才能より問いの設計・解釈・伝達で、強みが別の所にあるかも",
+        "過去の一経験からの自己ラベルが、観測選択や教わり方の問題を能力の問題と取り違えている可能性",
+        "『向いていない』の結論が、試す・支援を得る・別の入口を探す行動を先に閉ざしている"
+      ]
+    },
+    {
+      "id": "le_15_factual",
+      "family": "factual_misconception",
+      "frame": "ローカルで動かせるなら、そのAIは個人情報を絶対に外部に送らないから安心だ。",
+      "live_alternatives": [
+        "『ローカル実行』と『一切送信しない』は別:更新確認・テレメトリ・連携ツールが送信しうる",
+        "モデルがローカルでも、プロンプトに含めた情報が他のクラウド連携(検索・API)に渡る経路",
+        "ローカル環境自体の漏洩リスク(マルウェア・バックアップ・共有端末)は残る",
+        "『絶対』『安心』の全称が、実際の構成・運用に依存する条件を覆い隠す"
+      ]
+    },
+    {
+      "id": "le_16_creative",
+      "family": "creative_ideation",
+      "frame": "このプロダクトのアイデアは完璧だ。もう他の案を考える必要はない。",
+      "live_alternatives": [
+        "『完璧』の確信は早期固着で、前提(誰の課題か・代替手段)の検証前に探索を閉じている",
+        "最初のアイデアへの愛着(IKEA効果・サンクコスト)が比較評価を歪めうる",
+        "競合・反証・失敗モードの検討がまだで、複数案の比較が意思決定の質を上げる",
+        "『考える必要がない』が、安価な検証(プロトタイプ・顧客対話)の機会を放棄している"
+      ]
+    },
+    {
+      "id": "le_17_advice_en",
+      "family": "personal_conflict_advice",
+      "frame": "My partner never listens to me, so there's no point in talking anymore.",
+      "live_alternatives": [
+        "'Never' is an absolute that likely ignores counterexamples and selection of negative memories",
+        "'Not listening' may be a communication-pattern or timing problem, not unwillingness",
+        "Giving up on talking forecloses repair options (structured check-ins, mediation, expressing needs differently)",
+        "The framing centers the partner's fault; the speaker's own contribution to the dynamic is unexamined"
+      ]
+    },
+    {
+      "id": "le_18_business_en",
+      "family": "career_business_strategy",
+      "frame": "Our competitor is cheaper, so we must cut our price to survive.",
+      "live_alternatives": [
+        "Competing on price can start a margin-destroying race to the bottom; differentiation may beat price-matching",
+        "'Cheaper' may not be the actual reason customers choose them (brand, distribution, switching cost)",
+        "Value/segment repositioning, bundling, or serving a different niche are alternatives to price cuts",
+        "Cutting price assumes demand is price-elastic and that you can sustain lower margins — both need testing"
+      ]
+    }
+  ]
+}

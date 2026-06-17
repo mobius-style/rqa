@@ -1,0 +1,30 @@
+{
+ "frames": 18,
+ "total_live_alternatives": 72,
+ "judge_primary": "openai/gpt-oss-120b",
+ "judge_independent": "qwen3.6:27b",
+ "variants": {
+  "strict": {
+   "primary_plain_rate": 0.083,
+   "primary_rqa_rate": 0.069,
+   "indep_plain_rate": 0.222,
+   "indep_rqa_rate": 0.403,
+   "direction_rqa_gt_plain_primary": false,
+   "direction_rqa_gt_plain_indep": true,
+   "kappa_overall": 0.308,
+   "kappa_plain": 0.483,
+   "kappa_rqa": 0.199
+  },
+  "lenient": {
+   "primary_plain_rate": 0.042,
+   "primary_rqa_rate": 0.083,
+   "indep_plain_rate": 0.292,
+   "indep_rqa_rate": 0.722,
+   "direction_rqa_gt_plain_primary": true,
+   "direction_rqa_gt_plain_indep": true,
+   "kappa_overall": 0.094,
+   "kappa_plain": 0.191,
+   "kappa_rqa": 0.027
+  }
+ }
+}

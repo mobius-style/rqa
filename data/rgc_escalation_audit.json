@@ -1,0 +1,194 @@
+{
+ "distribution": {
+  "L1_direct": 30,
+  "L2_guided": 15,
+  "L3_instrument": 1,
+  "L0_canned": 1
+ },
+ "reaches_loop_rate": 0.3404255319148936,
+ "l3_rate": 0.02127659574468085,
+ "stranded": [
+  {
+   "seed_id": "pattern:pat_self_ref_identity_004:1237",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "What objective are you meant to achieve?"
+  },
+  {
+   "seed_id": "pattern:pat_correction_022:771",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "You didn't mention the timeline for the project."
+  },
+  {
+   "seed_id": "pattern:pat_self_ref_identity_013:1319",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "What role do you play"
+  },
+  {
+   "seed_id": "pattern:pat_casual_engagement_123:160",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "Your solution to the sync problem was spot on, thanks!"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_012:913",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "What's the etymology of the term 'algorithm'?"
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_100:480",
+   "route": "L1_direct",
+   "posture": "deepen",
+   "input": "I need a clear explanation of the uncertainty principle."
+  },
+  {
+   "seed_id": "pattern:pat_casual_engagement_122:151",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "You make a good point—I hadn't considered that, but I agree."
+  },
+  {
+   "seed_id": "pattern:pat_casual_engagement_118:125",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "Spent the afternoon just thinking about life."
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_100:1387",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "Do you know the current turn count of our conversation?"
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_009:255",
+   "route": "L1_direct",
+   "posture": "deepen",
+   "input": "What information is stored in Box 0?"
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_017:1358",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "Can you give me a summary of our chat so far?"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_030:1021",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "Where is the capital of Mexico located?"
+  },
+  {
+   "seed_id": "core500:fr_core500_339",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "User request: Who is the author of '1984' and 'Animal Farm'?"
+  },
+  {
+   "seed_id": "pattern:pat_correction_014:725",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "I need you to act as a financial advisor, not a physician."
+  },
+  {
+   "seed_id": "core500:fr_core500_080",
+   "route": "L1_direct",
+   "posture": "anchor_search",
+   "input": "Respond to this question without adding unsupported assumpti"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_027:993",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "Xの略は何"
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_017:314",
+   "route": "L1_direct",
+   "posture": "deepen",
+   "input": "ルーティングエンジンの仕組み"
+  },
+  {
+   "seed_id": "core500:fr_core500_422",
+   "route": "L1_direct",
+   "posture": "anchor_search",
+   "input": "Please answer this user question: Is Java 21 still the lates"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_051:1160",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "Is the brand Zara owned by Inditex?"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_032:1033",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "What's the distance between Paris and Berlin?"
+  },
+  {
+   "seed_id": "pattern:pat_concept_explain_032:431",
+   "route": "L1_direct",
+   "posture": "deepen",
+   "input": "What defined the Baroque period in art and culture?"
+  },
+  {
+   "seed_id": "pattern:pat_self_reference_100:1389",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "What's the number of exchanges we've completed?"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_032:1035",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "How many miles is the drive from Tokyo to Kyoto?"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_021:974",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "X 的作者是谁"
+  },
+  {
+   "seed_id": "core500:fr_core500_177",
+   "route": "L1_direct",
+   "posture": "anchor_search",
+   "input": "Please answer this user question: Now that Sundar Pichai has"
+  },
+  {
+   "seed_id": "pattern:pat_factual_inquiry_007:880",
+   "route": "L1_direct",
+   "posture": "rule6",
+   "input": "Guide me on how to compile a C program with gcc."
+  },
+  {
+   "seed_id": "pattern:pat_self_ref_identity_006:1258",
+   "route": "L1_direct",
+   "posture": "moderate",
+   "input": "Who is the creator of this assistant?"
+  }
+ ],
+ "by_posture": {
+  "moderate": {
+   "L1_direct": 9,
+   "L2_guided": 4
+  },
+  "deepen": {
+   "L2_guided": 8,
+   "L1_direct": 4
+  },
+  "anchor_search": {
+   "L3_instrument": 1,
+   "L0_canned": 1,
+   "L2_guided": 2,
+   "L1_direct": 4
+  },
+  "rule6": {
+   "L2_guided": 1,
+   "L1_direct": 13
+  }
+ }
+}

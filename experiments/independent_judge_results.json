@@ -1,0 +1,143 @@
+{
+ "summary": {
+  "judge_independent": "qwen3.6:27b",
+  "judge_primary": "openai/gpt-oss-120b",
+  "frames": 18,
+  "total_live_alternatives": 72,
+  "independent_plain_retention_rate": 0.069,
+  "independent_rqa_retention_rate": 0.333,
+  "direction_rqa_ge_plain_independent": true,
+  "cohens_kappa_overall": -0.063,
+  "cohens_kappa_plain": 0.115,
+  "cohens_kappa_rqa": -0.171,
+  "agreement_raw": 0.715
+ },
+ "per_frame": [
+  {
+   "id": "le_01",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 0,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_02",
+   "primary_plain": 1,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_03",
+   "primary_plain": 1,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 1
+  },
+  {
+   "id": "le_04",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_05",
+   "primary_plain": 1,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_06",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_07",
+   "primary_plain": 1,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_08",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 0,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_09_conflict",
+   "primary_plain": 0,
+   "indep_plain": 1,
+   "primary_rqa": 0,
+   "indep_rqa": 3
+  },
+  {
+   "id": "le_10_career",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_11_moral",
+   "primary_plain": 0,
+   "indep_plain": 1,
+   "primary_rqa": 1,
+   "indep_rqa": 2
+  },
+  {
+   "id": "le_12_policy",
+   "primary_plain": 0,
+   "indep_plain": 1,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_13_forecast",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 0,
+   "indep_rqa": 4
+  },
+  {
+   "id": "le_14_identity",
+   "primary_plain": 1,
+   "indep_plain": 1,
+   "primary_rqa": 0,
+   "indep_rqa": 4
+  },
+  {
+   "id": "le_15_factual",
+   "primary_plain": 1,
+   "indep_plain": 0,
+   "primary_rqa": 0,
+   "indep_rqa": 3
+  },
+  {
+   "id": "le_16_creative",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 1,
+   "indep_rqa": 0
+  },
+  {
+   "id": "le_17_advice_en",
+   "primary_plain": 0,
+   "indep_plain": 0,
+   "primary_rqa": 0,
+   "indep_rqa": 4
+  },
+  {
+   "id": "le_18_business_en",
+   "primary_plain": 0,
+   "indep_plain": 1,
+   "primary_rqa": 0,
+   "indep_rqa": 3
+  }
+ ]
+}

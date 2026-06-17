@@ -1,0 +1,11 @@
+# Pinned External Evaluator binding (SPEC_v0_2.md §5.2 / §6.5).
+# Changing this file = swapping the Evaluator; requires human approval.
+release: MMV-L-RC3.3
+provider_backend: openai_compatible
+endpoint: https://api.groq.com/openai/v1
+model: openai/gpt-oss-120b
+api_key_env: GROQ_API_KEY
+frozen_at: "2026-05-16"
+note: >
+  Pinned External Evaluator with Local Degradation. Outage degrades
+  selection to Stage 1 (local self-ranking); it never halts the system.
