@@ -134,3 +134,12 @@ docs/PHASE1_CORPUS_REPORT.md). `sft_phase1_holdout.jsonl` and
 - Code & figures: **AGPL-3.0-or-later** (see [LICENSE](LICENSE)).
 - Documents under `docs/` that carry their own license header (the companion
   paper drafts) are **CC BY-NC-SA 4.0**, as stated in those files.
+
+## Related — the Möbius program
+
+Part of the [MOBIUS](https://github.com/mobius-style) program — local-first, AGPL:
+
+- [mmv](https://github.com/mobius-style/mmv) — answer-entitlement runtime: decides *whether* answering is warranted
+- [rqa](https://github.com/mobius-style/rqa) — reflective questioning adapter: deepens *the question* when it is not
+- [rcgov](https://github.com/mobius-style/rcgov) — reflective context governor: governs *what a model may read*
+- [infinity](https://github.com/mobius-style/infinity) — composite capstone (MMV × RQA) with an OpenAI-compatible API
