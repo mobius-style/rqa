@@ -1138,7 +1138,7 @@ Rule 10: Surface escalation must be earned by input weight and evaluator quality
 ## 19.1 基本コマンド
 
 ```bash
-cd ~/デスクトップ/mobius_ai/mobius_rqa
+cd /path/to/rqa
 PY=../venv313/bin/python
 
 $PY -m rqa check

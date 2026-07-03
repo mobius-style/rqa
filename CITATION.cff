@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "MOBIUS-RQA — memory-echo governance for assistants with memory"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Toeda
+    given-names: Taiko
+    affiliation: MOBIUS LLC
+abstract: >-
+  A working, model-independent, near-deterministic mitigation for "memory
+  echo" in LLM assistants with long-term memory: provenance-tagged memory
+  plus deterministic output-time self-citation verification, with an
+  empirical pilot across six local models in three families.
+repository-code: "https://github.com/mobius-style/rqa"
+url: "https://github.com/mobius-style/rqa"
+license: AGPL-3.0-or-later
+keywords:
+  - ai-memory
+  - provenance
+  - memory-echo
+  - self-citation-verification
+  - local-first

@@ -1,0 +1,5 @@
+# Runtime dependencies (generation runs on local models via Ollama;
+# the pinned external evaluator needs GROQ_API_KEY at run time).
+requests>=2.31
+pyyaml>=6.0
+# Tests: pip install pytest && python -m pytest -q tests/

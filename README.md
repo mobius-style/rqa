@@ -70,10 +70,21 @@ input
 Boundary discipline, the Essentials-like injection filter, append-only graph
 with audit log, and bounded reflection limits follow the spec exactly.
 
+## Setup
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt   # requests + pyyaml (pytest to run tests)
+```
+
+Generation runs on local models via [Ollama](https://ollama.com/); the external
+evaluator needs `GROQ_API_KEY` (see below). In the MOBIUS monorepo the shared
+`../venv313` works as-is (`bin/rqa` wraps it).
+
 ## Usage
 
 ```bash
-PY=../venv313/bin/python          # shared MOBIUS venv  (or: bin/rqa <verb>)
+PY=.venv/bin/python               # or ../venv313/bin/python in the MOBIUS monorepo
 
 $PY -m rqa chat                   # conversational REPL: streaming answer +
                                   #   async reflective sidecar (SPEC v0.3)
@@ -99,11 +110,11 @@ it is an evaluator swap and requires human approval (spec §6.5).
 ## Tests
 
 ```bash
-../venv313/bin/python -m pytest -q tests/
+.venv/bin/python -m pytest -q tests/
 ```
 
 Unit tests are network-free (fake adapter/evaluator). Latest local run:
-`64 passed`. The live path is exercised via `rqa check` + a real `rqa ask`.
+`66 passed`. The live path is exercised via `rqa check` + a real `rqa ask`.
 
 ## Training (Stage C / SPEC §13)
 
@@ -143,3 +154,4 @@ Part of the [MOBIUS](https://github.com/mobius-style) program — local-first, A
 - [rqa](https://github.com/mobius-style/rqa) — reflective questioning adapter: deepens *the question* when it is not
 - [rcgov](https://github.com/mobius-style/rcgov) — reflective context governor: governs *what a model may read*
 - [infinity](https://github.com/mobius-style/infinity) — composite capstone (MMV × RQA) with an OpenAI-compatible API
+- [tokyo-insight](https://github.com/mobius-style/tokyo-insight) — on-demand civic-RAG engine for 東京都議会 deliberation records (engine + facts only)
