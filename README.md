@@ -146,6 +146,18 @@ docs/PHASE1_CORPUS_REPORT.md). `sft_phase1_holdout.jsonl` and
 - Documents under `docs/` that carry their own license header (the companion
   paper drafts) are **CC BY-NC-SA 4.0**, as stated in those files.
 
+### Commercial license
+
+If your organization cannot meet AGPL's source-disclosure obligations, a
+commercial license is available from MOBIUS LLC (sole rights holder):
+**USD 500 per month, per company — cancel anytime, no minimum term.**
+Annual invoicing available at USD 5,000/year.
+
+It is a license grant, not a service: no service is performed, no data of
+yours is accessed, and nothing you run depends on our availability.
+
+Contact: **info@mobius.style** — licensing questions are not handled in Issues.
+
 ## Related — the Möbius program
 
 Part of the [MOBIUS](https://github.com/mobius-style) program — local-first, AGPL:
